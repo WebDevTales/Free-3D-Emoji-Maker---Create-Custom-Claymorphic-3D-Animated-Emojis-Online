@@ -1,4 +1,7 @@
- const mainPresets = [
+document.addEventListener("DOMContentLoaded", function() {
+  // ✅ All your JS code here will run AFTER the HTML is loaded
+  console.log("DOM fully loaded!");
+const mainPresets = [
             { name: '😊 Happy', emoji: '😊', headColor: '#74f5d2', mouthCurve: 50 },
             { name: '😎 Cool', emoji: '😎', headColor: '#4da6ff', mouthCurve: 20 },
             { name: '😳 Shy', emoji: '😳', headColor: '#ffb3ba', mouthCurve: -10 },
@@ -845,3 +848,4 @@ document.getElementById('pngBgToggle').onclick = (e) => {
         initializePresets();
         bindControls();
         generateSVG();
+});
